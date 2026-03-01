@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="28">
+  <defs>
+    <filter id="s" x="0" y="0" width="1" height="1">
+      <feFlood flood-opacity="0.3" result="f"/>
+      <feComposite in="f" in2="SourceAlpha" operator="in"/>
+      <feOffset dx="1" dy="1"/>
+      <feComposite in2="SourceAlpha" operator="out"/>
+      <feComposite in2="SourceGraphic"/>
+      <feBlend mode="normal"/>
+    </filter>
+    <linearGradient id="a" x2="0" y2="100%">
+      <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+      <stop offset="1" stop-opacity=".1"/>
+    </linearGradient>
+    <clipPath id="r">
+      <rect width="102" height="28" rx="3" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#r)">
+    <!-- Left dark section -->
+    <rect width="30" height="28" fill="#2867B2"/>
+    <!-- Right blue section -->
+    <rect x="30" width="72" height="28" fill="#0077B5"/>
+    <rect width="102" height="28" fill="url(#a)"/>
+  </g>
+  <!-- LinkedIn 'in' logo icon -->
+  <g fill="#fff" transform="translate(6, 5)">
+    <rect x="0" y="4" width="3.5" height="11" rx="0.5"/>
+    <circle cx="1.75" cy="1.75" r="1.75"/>
+    <path d="M6 5h3.2v1.5h.05C9.8 5.6 11 4.8 12.8 4.8c3 0 3.5 2 3.5 4.5V15h-3.3v-5c0-1.2 0-2.7-1.65-2.7S9 9.1 9 9.9V15H6V5z"/>
+  </g>
+  <!-- Label text -->
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+    <text x="66" y="19" filter="url(#s)" fill="#010101" fill-opacity=".3">LinkedIn</text>
+    <text x="66" y="18">LinkedIn</text>
+  </g>
+</svg>
