@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="107" height="28" viewBox="0 0 107 28">
+  <defs>
+    <linearGradient id="bgGrad" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#9B62DC"/>
+      <stop offset="100%" stop-color="#7B42BC"/>
+    </linearGradient>
+    <clipPath id="iconClip">
+      <circle cx="14" cy="14" r="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- Pill background -->
+  <rect width="107" height="28" rx="14" fill="#161b22"/>
+  <rect width="107" height="28" rx="14" fill="none" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Icon circle background -->
+  <circle cx="14" cy="14" r="10" fill="url(#bgGrad)"/>
+
+  <!-- Terraform logo: four white parallelogram blocks, scaled to fit icon -->
+  <g clip-path="url(#iconClip)">
+    <g transform="translate(6.6, 6.6) scale(0.6167)">
+      <path fill="#FFFFFF" d="
+        M1.44 0v7.575l6.561 3.79V3.787Z
+        M22.56 4.227l-6.561 3.791v7.574l6.56-3.787Z
+        M8.72 4.23v7.575l6.561 3.787V8.018Z
+        M8.72 12.635v7.575L15.28 24v-7.578Z
+      "/>
+    </g>
+  </g>
+
+  <!-- Label -->
+  <text x="30" y="18"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="12" font-weight="500" fill="#e6edf3" letter-spacing="0.01em">Terraform</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="28" viewBox="0 0 98 28">
+  <defs>
+    <linearGradient id="bgGrad" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#2E2C2B"/>
+      <stop offset="100%" stop-color="#1A1918"/>
+    </linearGradient>
+    <linearGradient id="logoGrad" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.12"/>
+    </linearGradient>
+    <clipPath id="iconClip">
+      <circle cx="14" cy="14" r="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- Pill background -->
+  <rect width="98" height="28" rx="14" fill="#161b22"/>
+  <rect width="98" height="28" rx="14" fill="none" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Icon circle background -->
+  <circle cx="14" cy="14" r="10" fill="url(#bgGrad)"/>
+
+  <!-- Ansible logo: white 'A' arrow path, scaled to fit icon -->
+  <g clip-path="url(#iconClip)">
+    <g transform="translate(4, 4) scale(0.2)">
+      <path fill="#FFFFFF" d="
+        M50.96 30.56 L63.85 62.39 L44.38 47.04 Z
+        M73.87 69.72 L54.04 21.98
+          C53.47 20.60 52.34 19.88 50.96 19.88
+          C49.58 19.88 48.37 20.60 47.80 21.98
+          L26.03 74.34 L33.48 74.34 L41.87 52.75
+          L67.81 73.52
+          C68.84 74.35 69.60 74.74 70.57 74.74
+          C72.52 74.74 74.21 73.29 74.21 71.18
+          C74.21 70.84 74.09 70.29 73.87 69.72 Z
+      "/>
+    </g>
+  </g>
+
+  <!-- Label -->
+  <text x="30" y="18"
+    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    font-size="12" font-weight="500" fill="#e6edf3" letter-spacing="0.01em">Ansible</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="28">
+  <defs>
+    <filter id="s" x="0" y="0" width="1" height="1">
+      <feFlood flood-opacity="0.3" result="f"/>
+      <feComposite in="f" in2="SourceAlpha" operator="in"/>
+      <feOffset dx="1" dy="1"/>
+      <feComposite in2="SourceAlpha" operator="out"/>
+      <feComposite in2="SourceGraphic"/>
+      <feBlend mode="normal"/>
+    </filter>
+    <linearGradient id="a" x2="0" y2="100%">
+      <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+      <stop offset="1" stop-opacity=".1"/>
+    </linearGradient>
+    <clipPath id="r">
+      <rect width="102" height="28" rx="3" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#r)">
+    <!-- Left dark red section -->
+    <rect width="30" height="28" fill="#CC0000"/>
+    <!-- Right red section -->
+    <rect x="30" width="72" height="28" fill="#FF0000"/>
+    <rect width="102" height="28" fill="url(#a)"/>
+  </g>
+  <!-- YouTube play button icon -->
+  <g transform="translate(5, 5)">
+    <!-- Rounded rectangle background -->
+    <rect width="20" height="18" rx="4" fill="#fff" opacity="0.9"/>
+    <!-- Play triangle -->
+    <polygon points="8,5 8,13 15,9" fill="#FF0000"/>
+  </g>
+  <!-- Label text -->
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+    <text x="66" y="19" filter="url(#s)" fill="#010101" fill-opacity=".3">YouTube</text>
+    <text x="66" y="18">YouTube</text>
+  </g>
+</svg>
