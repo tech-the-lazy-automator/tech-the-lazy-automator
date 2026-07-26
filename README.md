@@ -18,6 +18,8 @@ In my channel, you will find from networking to virtualization and containerizat
 
 - [Docker Compose Services](https://github.com/tech-the-lazy-automator/docker-compose-services) - Docker Compose files of different services for running and managing services in containers.
 
+- [Watch and Run](https://github.com/tech-the-lazy-automator/watch-and-run) - Commands used across my YouTube tutorials, organized by video topic for quick reference.
+
 ## Join My Community
 If you run into any issues or need help to troubleshoot, or just have a quick question, [Join our community](https://discord.gg/EHcn4knGW4)! We have a dedicated Discord Community with professional individuals and experienced contributors who are always up for helping you.
 
